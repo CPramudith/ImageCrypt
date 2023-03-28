@@ -22,8 +22,8 @@ option = input(str("Select the option [write/read] : "))
 
 def write():
     print("\nSelect the image file : ")
-    file = input(home+"\\")
-    ffile = home+"\\"+file
+    file = input(home+"/")
+    ffile = home+"/"+file
 
     with open(ffile, "rb")as f:
         stuff = [line.rstrip() for line in f]
@@ -57,8 +57,8 @@ def write():
 
 def read():
     print("\nSelect the image file : ")
-    file = input(home+"\\")
-    ffile = home+"\\"+file
+    file = input(home+"/")
+    ffile = home+"/"+file
 
     with open(ffile, "rb")as f:
         stuff = [line.rstrip() for line in f]
